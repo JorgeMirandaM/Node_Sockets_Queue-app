@@ -3,7 +3,7 @@ const fs= require('fs');
 
 class Ticket{
 
-    constructor(numero){
+    constructor(numero,escritorio){
         this.numero=numero;
         this.escritorio= escritorio;
     }

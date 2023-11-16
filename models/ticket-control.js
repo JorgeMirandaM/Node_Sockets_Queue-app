@@ -16,7 +16,7 @@ class TicketControl{
         this.ultimo=0;
         this.hoy= new Date().getDate();
         this.tickets=[];
-        this.ultimos4=0;
+        this.ultimos4=[];
         
         this.init();
     }
@@ -71,7 +71,7 @@ class TicketControl{
 
         this.ultimos4.unshift(ticket);
 
-        if(this.ultimos4>4){
+        if(this.ultimos4.length>4){
             this.ultimos4.splice(-1,1);
         }
 
